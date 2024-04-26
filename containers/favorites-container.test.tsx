@@ -1,15 +1,18 @@
 import { render, screen } from "@testing-library/react";
+import { storage } from "services";
 import FavoritesContainer from "./favorites-container";
 
-/**
- *
- * TODO: Mock local storage service to finish these tests...
- *
- */
+describe("Component: Favorite", () => {
+  beforeEach(() => storage.clear());
 
-describe("Component: Header", () => {
-  it("Renders as the empty variant", () => {
+  it("Renders as the stroke variant", () => {
     render(<FavoritesContainer id={1} />);
     expect(screen.getByTestId("favorite-heart-stroke"));
+  });
+
+  it("Renders as the filled variant", () => {
+    storage.setFavorite(1);
+    render(<FavoritesContainer id={1} />);
+    expect(screen.getByTestId("favorite-heart-fill"));
   });
 });
