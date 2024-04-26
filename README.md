@@ -2,7 +2,7 @@
 
 ## Thought process: First steps
 
-- Investigate SimplyRETS API with a REST client to learn of it's capabilities.
+- Investigate SimplyRETS API with a REST client to learn of its capabilities.
 
 - Investigate Google Maps API, but more specifically `@react-google-maps/api`
 - Find common patterns in the Figma mockup.
@@ -11,7 +11,7 @@
 
 ### Code
 
-I prefer the seperation of "smart" and "dumb" components (container/component pattern). `/components` will contain UI components and helpers that have little to no internal state. `/containers` is similar to a "controller" or "view controller" in MVC and MVVC respectivelly. Renders the containers on the page, which will manage state and pass it down to children.
+I prefer the separation of "smart" and "dumb" components (container/component pattern). `/components` will contain UI components and helpers that have little to no internal state. `/containers` is similar to a "controller" or "view controller" in MVC and MVVC respectively. Renders the containers on the page, which will manage state and pass it down to children.
 
 #### Structure
 
