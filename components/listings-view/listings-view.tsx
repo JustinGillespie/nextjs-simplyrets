@@ -12,9 +12,11 @@ type Props = {
 };
 
 export default ({ propertyListings, isLoading = false }: Props) => {
-  if (propertyListings.length === 0 && isLoading) {
+  if (propertyListings.length === 0 && isLoading)
     return <div className={cx({ listings: true })}>Loading...</div>;
-  }
+
+  if (propertyListings.length === 0 && !isLoading)
+    return <div className={cx({ listings: true })}>No results found.</div>;
 
   return (
     <div className={cx({ listings: true, loading: isLoading })}>
