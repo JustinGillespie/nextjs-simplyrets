@@ -1,0 +1,25 @@
+@import "styles/variables.module.scss";
+
+.button {
+  background-color: $button-primary-bg-color;
+  appearance: none;
+  display: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px 25px;
+  border-radius: 4px;
+  position: fixed;
+  text-transform: uppercase;
+  border: 0;
+  font-size: 0.875rem;
+  font-weight: 700;
+  outline: 0;
+  bottom: 40px;
+  width: 140px;
+  z-index: 2;
+  left: calc(50% - 70px);
+
+  @include mobile {
+    display: inline-block;
+  }
+}

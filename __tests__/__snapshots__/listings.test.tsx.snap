@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Listings page renders listing page unchanged 1`] = `
+<div>
+  <div
+    class="page"
+  >
+    <header
+      class="header"
+      data-testid="global-header"
+      role="header"
+    >
+      <h1>
+        Property Listings
+      </h1>
+    </header>
+    <div
+      data-testid="listings"
+      role="propertylistings"
+    >
+      <div
+        class="flex"
+      >
+        <section
+          class="column fill"
+          role="propertylistingsmap"
+        />
+        <section
+          class="column fill hidden"
+          role="propertyresultslist"
+        >
+          <div
+            class="listings"
+          >
+            Loading...
+          </div>
+        </section>
+      </div>
+      <button
+        class="button"
+      >
+        List View
+      </button>
+    </div>
+  </div>
+</div>
+`;

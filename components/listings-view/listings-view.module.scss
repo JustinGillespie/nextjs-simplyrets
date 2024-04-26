@@ -1,0 +1,74 @@
+@import "styles/variables.module.scss";
+
+// List of all properties
+
+.listings {
+  padding: 45px;
+
+  &.loading {
+    opacity: 0.3;
+  }
+
+  img {
+    border-radius: 4px;
+    max-width: 100%;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-row: auto auto;
+  grid-gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Individual item
+
+.item {
+  color: $text-color-primary;
+
+  .photo {
+    position: relative;
+  }
+
+  .details {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 20px 0 12px;
+    padding: 0;
+  }
+
+  .price {
+    font-weight: 700;
+    font-size: 1.62rem;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .address {
+    font-size: 0.93rem;
+    font-weight: 400;
+    margin: 2px 0;
+    padding: 0;
+  }
+
+  .listed {
+    color: $text-color-secondary;
+    font-size: 0.87rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+}

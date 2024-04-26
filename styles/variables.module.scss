@@ -1,0 +1,29 @@
+$breakpoint-mobile: 800px;
+
+$button-primary-bg-color: #ce87c1;
+$button-primary-text-color: white;
+
+$header-bg-color: #373342;
+$header-text-color: white;
+$header-height: 103px;
+$header-height-mobile: 63px;
+
+$text-color-primary: #2d2d2d;
+$text-color-secondary: #979797;
+
+@mixin mobile() {
+  @media (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
+:export {
+  breakpointMobile: $breakpoint-mobile;
+  buttonPrimaryBGColor: $button-primary-bg-color;
+  buttonPrimaryTextColor: $button-primary-text-color;
+  headerBGColor: $header-bg-color;
+  headerTextColor: $header-text-color;
+  headerHeight: $header-height;
+  textColorPrimary: $text-color-primary;
+  textColorSecondary: $text-color-secondary;
+}

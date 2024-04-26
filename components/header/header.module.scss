@@ -1,0 +1,30 @@
+@import "styles/variables.module.scss";
+
+.header {
+  background-color: $header-bg-color;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height;
+  padding: 0 50px;
+  z-index: 3;
+
+  @include mobile {
+    height: $header-height-mobile;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: $header-text-color;
+    margin: 0;
+    padding: 0;
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+}
