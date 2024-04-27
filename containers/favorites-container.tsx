@@ -1,5 +1,5 @@
-import Favorite from "@/components/favorite/favorite";
 import { useState } from "react";
+import { Favorite } from "components";
 import { storage } from "services";
 
 /**
