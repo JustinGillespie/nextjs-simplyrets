@@ -3,7 +3,6 @@
 ## Thought process: First steps
 
 - Investigate SimplyRETS API with a REST client to learn of its capabilities.
-
 - Investigate Google Maps API, but more specifically `@react-google-maps/api`
 - Find common patterns in the Figma mockup.
 
@@ -18,8 +17,9 @@ I prefer the separation of "smart" and "dumb" components (container/component pa
 ```ts
 ./containers/ // react components that contain business logic
 ./components/ // user interface and dumb components
-./pages/ // components that are rendered by routing
-./services/ // non-react business logic
+./pages/      // components that are rendered by routing
+./services/   // non-react business logic
+./__tests__/  // high level page tests (integration/snapshot/e2e)
 ```
 
 ##### Components conventions
