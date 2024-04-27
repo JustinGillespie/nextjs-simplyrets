@@ -77,7 +77,7 @@ Navigate to `http://localhost:3000/`.
 
 ## Future Enhancements
 
-Just a place for me to jot down some "enhancements" as I could in a normal project.
+Just a place for me to jot down some "enhancements" as I would in a normal project.
 
 - **Pagination** Currently we are displaying only 4 results.
 - **Skeleton Loading Screen** Populate right side with skeleton while loading
