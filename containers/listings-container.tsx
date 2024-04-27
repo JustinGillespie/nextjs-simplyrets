@@ -19,7 +19,7 @@ export default () => {
   const [showMapView, setShowMapView] = useState(true);
 
   /**
-   * The current latitude and longitude stored as an array. The defaults
+   * The current latitude and longitude stored as an object. The defaults
    * i'm using are just some I found in the documentation, but I would
    * recommend using the geolocation API.
    *
